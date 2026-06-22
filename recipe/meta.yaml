@@ -32,6 +32,8 @@ test:
     - pip check
   requires:
     - pip
+    - pytest
+    - pytest-runner
 
 about:
   home: https://github.com/beetbox/audioread
