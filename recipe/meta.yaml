@@ -18,6 +18,9 @@ requirements:
     - python
     - pip
     - poetry-core
+    # ffmpeg is pinned in the aggregate CBC; mirror it into host so the pin applies
+    # (audioread invokes the ffmpeg binary at runtime as a decode backend).
+    - ffmpeg  # [not win]
   run:
     - python
     - ffmpeg  # [not win]
